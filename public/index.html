@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>SafeAI</h1>
+    <p>detector de spam com inteligência artificial</p>
+  </header>
+
+  <main>
+    <h2>analise seu e-mail</h2>
+
+    <form id="formulario">
+      <label for="email">texto do e-mail:</label>
+      <textarea id="email" placeholder="cole o e-mail aqui..." required></textarea>
+
+      <label for="imagens">imagens do e-mail:</label>
+      <input type="file" id="imagens" accept="image/*" multiple>
+
+      <button type="submit">analisar e-mail</button>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <section id="resultado" hidden>
+      <h2>resultado da análise</h2>
+      <p id="classificacao"></p>
+      <p id="risco"></p>
+      <p id="explicacao"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
